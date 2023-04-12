@@ -53,4 +53,17 @@ const team = [
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
     console.log(`${member.name} - ${member.role} - ${member.image}`)
+
+    document.querySelector(".container_card_grid").innerHTML += `
+        <div class="card_user">
+            <div class="wrap_image">
+                <img src="${member.image}" alt="image user">
+            </div>
+            <div class="container_info">
+                <h2 class="name_surname">${member.name}</h2>
+                <p class="role">${member.role}</p>
+            </div>
+        </div>
+    `;
+
 }
