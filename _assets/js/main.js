@@ -50,6 +50,8 @@ const team = [
     },
 ];
 
+let directory = "./_assets/_resources/imgs/";
+
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
     console.log(`${member.name} - ${member.role} - ${member.image}`)
@@ -57,7 +59,7 @@ for (let i = 0; i < team.length; i++) {
     document.querySelector(".container_card_grid").innerHTML += `
         <div class="card_user">
             <div class="wrap_image">
-                <img src="${member.image}" alt="image user">
+                <img src="${directory}${member.image}" alt="image user">
             </div>
             <div class="container_info">
                 <h2 class="name_surname">${member.name}</h2>
@@ -65,5 +67,4 @@ for (let i = 0; i < team.length; i++) {
             </div>
         </div>
     `;
-
 }
