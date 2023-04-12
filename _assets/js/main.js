@@ -51,5 +51,6 @@ const team = [
 ];
 
 for (let i = 0; i < team.length; i++) {
-    console.log(team[i])
+    const member = team[i];
+    console.log(`${member.name} - ${member.role} - ${member.image}`)
 }
