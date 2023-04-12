@@ -9,6 +9,100 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #fafafa;
-    color: #0a0a0a;
+    background: #1a1e23;
+    color: #fff;
+}
+
+img {
+    display: block;
+}
+
+/* Main */
+.main{
+    position: relative;
+    width: 100%;
+}
+
+/* Heading */
+.heading{
+    position: relative;
+    width: 100%;
+    padding: 1rem 4%;
+    text-align: center;
+}
+
+.heading_text{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .2em;
+}
+
+.subHeading_text{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Container Grid */
+.container_card_grid{
+    width: 100%;
+    margin: 60px 0;
+    padding: 0 4%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card_user{
+    background: transparent;
+    border: 2px solid grey;
+    border-radius: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.wrap_image{
+    width: 70px;
+    height: 70px;
+    aspect-ratio: 1;
+}
+
+.wrap_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.container_info{
+    width: 100%;
+    margin-left: 1em;
+}
+
+.name_surname{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .2em;
+}
+
+.role{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Media Query */
+@media only screen and (max-width: 900px){
+    .container_card_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .container_card_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
